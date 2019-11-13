@@ -2,6 +2,7 @@ import { createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 import config from './next.config';
+import _get from 'lodash/get';
 
 const initialState = {
 	firstStatePiece: 0
@@ -27,8 +28,8 @@ const actionSetFirstStatePiece = ({ firstStatePiece }) => ({
 });
 
 let composeEnhancers;
-const { DEV } = config.default.env;
-
+// const { DEV } = _get(config, 'default.env', null);
+const DEV = true;
 if (DEV) {
 	composeEnhancers = middleware => composeWithDevTools(middleware);
 } else {

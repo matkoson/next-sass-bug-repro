@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-// import { withRedux } from '../../../lib/redux';
+// import './index.scss';
+
 import { setFirstStatePiece } from '../../../store';
 // import { FIRST_ACTION } from './../store';
 const Home = ({ setFirstStatePiece }) => {
@@ -7,7 +8,7 @@ const Home = ({ setFirstStatePiece }) => {
 		const firstStatePiece = 'value overridden during Page render';
 		setFirstStatePiece({ firstStatePiece });
 	}, []);
-	return <h1>Connectico</h1>;
+	return <h1 className={'example'}>Home</h1>;
 };
 
 Home.getInitialProps = props => {

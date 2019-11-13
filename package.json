@@ -5,10 +5,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.0",
     "isomorphic-unfetch": "^3.0.0",
-    "next": "^9.1.3",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "lodash": "^4.17.15",
+    "next": "latest",
+    "node-sass": "^4.7.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "worker-farm": "^1.7.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.3",
